@@ -3,6 +3,7 @@
     <button type="button" class="btn btn-dark" routerLink="/nuevaski" *ngIf="isLogged" >Nueva Habilidad</button>
     <i class="bi bi-pencil-fill" id="btnsk"></i>
     <div class=" text-center col-sm-4 col-md-4 col-lg-4"> 
+      
   <circle-progress
     [percent]="85"
     [radius]="100"
@@ -16,6 +17,7 @@
     [animationDuration]="800"
     [lazy]="true"
   ></circle-progress>
+  <i class="bi bi-pencil-fill" id="btnsk"></i>
   </div>
   <div class=" text-center col-sm-4 col-md-4 col-lg-4"> 
   <circle-progress
@@ -68,21 +70,6 @@
   [radius]="100"
   [showUnits]="false"
   [title]= "'Mysql'"
-  [outerStrokeWidth]="16"
-  [innerStrokeWidth]="8"
-  [outerStrokeColor]="'#78C000'"
-  [innerStrokeColor]="'#C7E596'"
-  [animation]="true"
-  [animationDuration]="800"
-  [lazy]="true"
-  ></circle-progress>
-  </div>
-  <div class="text-center col-sm-4 col-md-4 col-lg-4"> 
-  <circle-progress
-  [percent]="55"
-  [radius]="100"
-  [showUnits]="false"
-  [title]= "'Base de datos'"
   [outerStrokeWidth]="16"
   [innerStrokeWidth]="8"
   [outerStrokeColor]="'#78C000'"
