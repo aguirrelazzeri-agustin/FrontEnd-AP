@@ -1,1 +1,34 @@
-<p>new-proyecto works!</p>
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombrePro">Nombre del proyecto</label>
+                    <input type="text" class="form-control" id="nombrePro" name="nombrePro" [(ngModel)]="nombreP" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionPro">Descripción del proyecto</label>
+                    <input type="text" class="form-control" id="descripcionP" name="descripcionPro" [(ngModel)]="descripcionP" required>
+                </div>
+                <div class="form-group">
+                    <label for="imagenPro">Link  </label>
+                    <input type="text" class="form-control" id="imagenPro" name="LinkPro" [(ngModel)]="linkP" required>
+                </div>
+                <label for="nombrePro">Nombre del proyecto</label>
+                <input type="text" class="form-control" id="nombrePro" name="nombrePro" [(ngModel)]="materiaP" required>
+           
+            <div class="form-group">
+                <label for="descripcionPro">Descripción del proyecto</label>
+                <input type="text" class="form-control" id="descripcionP" name="descripcionPro" [(ngModel)]="integrantesP" required>
+            </div>
+            <div class="form-group">
+                <label for="imagenPro">Link  </label>
+                <input type="text" class="form-control" id="imagenPro" name="LinkPro" [(ngModel)]="linkCP" required>
+            </div>
+                <button class="btn btn-primary">Agregar Proyecto</button>
+            </form>
+            <a href="http://localhost:4200/ "class="btn btn-primary">Cancelar</a>
+        </div>
+    </div>
+</div>
+
