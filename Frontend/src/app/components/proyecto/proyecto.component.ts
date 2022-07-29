@@ -15,9 +15,34 @@ export class ProyectoComponent implements OnInit {
 
   constructor(private proyectoService: SProyectoService,private tokenService: TokenService  ) { }
 
-  ngOnInit(): void {
+  isLogged = false;
 
-    
+  ngOnInit(): void {
+    this.cargarProyecto();
+    if (this.tokenService.getToken()) {
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
+    }
+ 
+  }
+  cargarProyecto(): void {
+    this.proyectoService.lista().subscribe(
+      data=>{
+        this.proyecto = data;});
+  }
+
+  delete(id?: number) {
+    if (id != undefined) {
+      this.proyectoService.delete(id).subscribe(
+        data => {
+          this.cargarProyecto();
+        }, err => {
+          alert("no se pudo borrar el proyecto!!!!!!");
+
+        }
+      )
+    }
   }
 
 }
