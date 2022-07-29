@@ -7,27 +7,27 @@ import { Skills } from '../model/skills';
   providedIn: 'root'
 })
 export class SkillsService {
-  skiURL = 'http://localhost:8080/skills/';
+  URLski = 'http://localhost:8080/skills/';
 
   constructor(private httpClient: HttpClient) { }
 
   public lista(): Observable<Skills[]>{
-    return this.httpClient.get<Skills[]>(this.skiURL + 'lista');
+    return this.httpClient.get<Skills[]>(this.URLski + 'lista');
 }
 
 public detail(id: number): Observable<Skills>{
-    return this.httpClient.get<Skills>(this.skiURL + `detail/${id}`);
+    return this.httpClient.get<Skills>(this.URLski + `detail/${id}`);
 }
 
 public save(skills: Skills): Observable<any>{
-    return this.httpClient.post<any>(this.skiURL + 'create', skills);
+    return this.httpClient.post<any>(this.URLski + 'create', skills);
 }
 
 public update(id: number, skills: Skills): Observable<any>{
-    return this.httpClient.put<any>(this.skiURL + `update/${id}`, skills);
+    return this.httpClient.put<any>(this.URLski + `update/${id}`, skills);
 }
 
 public delete(id: number): Observable<any>{
-    return this.httpClient.delete<any>(this.skiURL + `delete/${id}`);
+    return this.httpClient.delete<any>(this.URLski + `delete/${id}`);
 }
 }
