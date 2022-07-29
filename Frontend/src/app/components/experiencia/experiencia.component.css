@@ -1,0 +1,30 @@
+.mb-3 {
+    background-color:   #3476bd;
+  }
+  #carouselExampleDark {
+      padding: 40px;
+  }
+  
+  
+  #foto1 {
+      width: 400px;
+      height: 400px;
+  }
+  
+  #LBD {
+      width: 400px;
+      height: 300px;
+  }
+  
+  #PLV {
+      height: 300px;
+      width: 400px;
+  }
+  
+  .Urbano {
+      text-align: right; 
+  }
+
+  h2{
+    text-indent: 70px;
+  }

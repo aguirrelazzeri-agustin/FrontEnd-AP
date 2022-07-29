@@ -1,0 +1,13 @@
+.row {
+    background-color: #157ff0;
+    padding: 20px;
+}
+
+#titulo {
+    text-indent: 70px;
+}
+
+.btnsk{
+    justify-items: right;
+    margin: 10px;
+}

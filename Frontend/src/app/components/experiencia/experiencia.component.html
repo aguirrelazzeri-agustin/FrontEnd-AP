@@ -1,0 +1,201 @@
+<h2> Experiencia Laboral </h2>
+<div class="row">
+    <td *ngIf="isLogged"><button type="button" class="btn btn-secondary" routerLink="/nuevaexp" > Nueva Experiencia </button></td> 
+ 
+    
+
+    <section id="educacion" class="container-fluid">
+        <div class="container py-4 contenedor">
+          
+
+
+            <ul class="row justify-content-center list-unstyled mt-3" id="prueba">
+                <li class="col-12 card mb-3" *ngFor="let Experiencia of experiencia">
+                    <tr >
+                        <td *ngIf="isLogged">
+                            <button class="btn btn-light" routerLink="/editexp/Experiencia.id}}"> 
+                                <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                        </td>
+                        <td *ngIf="isLogged">
+                            <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                                <i class="bi bi-trash-fill"></i> BORRAR</button>
+                        </td>
+                      
+                        
+                    </tr>
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex align-items-center">
+                            <div class="edu-img"><iframe width="360" height="300"
+                                    src="" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe></div>
+                        </div>
+
+
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title display-6 text-center"> <span class="fw-bolder">{{Experiencia.nombreE}} </span></h4>
+                                <p class="card-text fs-4">{{Experiencia.descripcionE}}
+                                   </p>
+                                <a href="https://www.youtube.com/hashtag/conestilourbano" target="_blank"
+                                    class="Urbano">  </a>
+                                <div class="row justify-content-between">
+                                    <div class="col-md">
+                                        <p class="fs-4"><span class="fw-bolder">Año:</span> {{Experiencia.fechaE}} </p>
+                                    </div>
+                                    <div class="col-md text-center"><a
+                                            href=""
+                                            class="btn btn-lg" target="_blank"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li class="col-12 card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex align-items-center">
+                            <div class="edu-img"><iframe width="360" height="300"
+                                    src="https://www.youtube.com/embed/C1ioGS1P1Qg" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe></div>
+                        </div>
+
+
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title display-6 text-center"> <span class="fw-bolder"> Vorterix Santa
+                                        Rosa 96.7 </span></h4>
+                                <p class="card-text fs-4">
+                                    Trabaje en dos programas diferentes, "El tren de las 19" y el otro "Nada Es lo que
+                                    parece";
+                                    en esos dos programas era operador de audio y video. La radio al ser una multimedia,
+                                    tuvo varios eventos donde se transmitía desde el lugar, en dichos eventos realice la
+                                    operador
+                                    tanto de audio como de video desde el lugar de transmisión </p>
+                                <a href="https://www.youtube.com/hashtag/conestilourbano" target="_blank"
+                                    class="Urbano"> Columna #ConEstiloUrbano </a>
+                                <div class="row justify-content-between">
+                                    <div class="col-md">
+                                        <p class="fs-4"><span class="fw-bolder">Año:</span> 2017-2019 </p>
+                                    </div>
+                                    <div class="col-md text-center"><a
+                                            href="https://www.youtube.com/channel/UCajpyH-x1RsEBGN6oqIE59A"
+                                            class="btn btn-lg" target="_blank">Entrevistas Realizadas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+
+                <li class="col-12 card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex align-items-center">
+                            <div class="edu-img"><img src="../../assets/Pone La Pava1.jpg" class="img-fluid" id="PLV">
+                            </div>
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title display-6 text-center"> <span class="fw-bolder"> Power 103.7 -
+                                        Pone La Pava </span></h4>
+                                <p class="card-text fs-4">
+                                    Operador de audio dos programas, uno que salía 3 veces
+                                    por semana que se llamaba "Nadie se salva" y el segundo los sábados, de 9 a 12 que
+                                    se llamaba
+                                    "Estación Power". Al otro año tenia el mismo trabajo, Pero operaba un programa que
+                                    salía
+                                    únicamente por streaming , de lunes a viernes de 10 a 12 y llamaba "Pone La pava"
+
+                                </p>
+                                <div class="row justify-content-between">
+                                    <div class="col-md">
+                                        <p class="fs-4"><span class="fw-bolder">Año:</span> 2018-2019 </p>
+                                    </div>
+                                    <div class="col-md text-center"><a
+                                            href="https://www.google.com/maps/place/Lisandro+de+la+Torre+474,+L6300BQI+Santa+Rosa,+La+Pampa,+Argentina/@-36.6220579,-64.2850551,3a,75y,174.94h,87.53t/data=!3m6!1e1!3m4!1slrcfLSeXYoI6iZAcW4fp_w!2e0!7i13312!8i6656!4m5!3m4!1s0x95c2cda941aa99c9:0x997fc88cda0e601!8m2!3d-36.6221829!4d-64.2852208"
+                                            class="btn btn-lg" target="_blank">
+                                            Ubicación Power 103.7</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <li class="col-12 card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex align-items-center">
+                            <div class="edu-img"><img src="../../assets/lbd.jpg" class="img-fluid" id="LBD"></div>
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title display-6 text-center"> <span class="fw-bolder">La Bestia
+                                        Deportiva </span> </h4>
+                                <p class="card-text fs-4">Diario deportivo de Ushuaia, comencé a escribir sobre la Liga
+                                    Nacional de Básquet y los equipos de Mar Del plata
+                                    (Peñarol y Quilmes) que le jugaban. Luego sobre NBA, Juegos Olímpicos(), Juego
+                                    Panamericanos(),Mundial de Básquet China 2019, Juegos
+                                    de la Araucanía y juegos EPADE ()
+                                </p>
+                                <div class="row justify-content-between">
+                                    <div class="col-md">
+                                        <p class="fs-4"><span class="fw-bolder">Año:</span> 2014-actualidad </p>
+                                    </div>
+                                    <div class="col-md text-center"><a
+                                            href="http://labestiadeportiva.com/lbd/?s=colo+aguirre" class="btn btn-lg"
+                                            target="_blank">Notás</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+                <li class="col-12 card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4 d-flex align-items-center">
+                            <div class="edu-img"><img src="../../assets/Radio Rivadavia.jpg" class="img-fluid"></div>
+                        </div>
+
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h4 class="card-title display-6 text-center"> <span class="fw-bolder"> Radio Rivadavia
+                                    </span> </h4>
+                                <p class="card-text fs-4">
+                                    Operador de Audio sobre programas que informaban sobre eventos deportivos
+                                    importante con un envió desde el lugar, realizando entrevistas a los protagonistas
+                                    deportivos.
+                                    Además informaba los resultados de los deportistas argentina que competían en los
+                                    distintos eventos
+                                    (Fiba America básquet "Mexico 2015",Juegos Olímpicos "Rio 2016", Juegos
+                                    Panamericanos "Toronto 2019",
+                                    Juegos Olímpicos "Tokio 2020" ) </p>
+                                <div class="row justify-content-between">
+                                    <div class="col-md">
+                                        <p class="fs-4"><span class="fw-bolder">Año: </span> 2015 - 2020 </p>
+                                    </div>
+                                    <div class="col-md text-center"><a
+                                            href="https://www.google.com/maps/place/Radio+Rivadavia+Santa+Rosa/@-36.6261653,-64.2829281,3a,75y,104.19h,87.01t/data=!3m6!1e1!3m4!1s9D21DkKITed0ndLwFFWbnA!2e0!7i13312!8i6656!4m12!1m6!3m5!1s0x0:0xf8038e00a432b113!2sRadio+Rivadavia+Santa+Rosa!8m2!3d-36.6262079!4d-64.2828302!3m4!1s0x95c2cdac86d55009:0xf8038e00a432b113!8m2!3d-36.6262079!4d-64.2828302!5m1!1e3"
+                                            target="_blank" class="btn btn-lg">Ubicación</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </li>
+
+       
+                
+
+            </ul>
+
+        </div>
+    </section>
+</div>

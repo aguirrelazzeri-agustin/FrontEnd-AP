@@ -1,0 +1,12 @@
+.row {
+    background-color: #225a96 ;
+    padding: 60px;
+}
+#texto {
+    vertical-align: right;
+
+}
+
+#titulo {
+    text-indent: 40px;
+}
