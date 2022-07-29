@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Proyecto } from 'src/app/model/proyecto';
+import { SProyectoService} from 'src/app/service/s-proyecto.service';
+import { TokenService } from 'src/app/service/token.service';
+
 
 @Component({
   selector: 'app-proyecto',
@@ -7,11 +11,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProyectoComponent implements OnInit {
 
-  proyecto: ProyectoComponent[] = [];
+  proyecto: Proyecto[] = [];
 
-  constructor() { }
+  constructor(private proyectoService: SProyectoService,private tokenService: TokenService  ) { }
 
   ngOnInit(): void {
+
+    
   }
 
 }
