@@ -8,6 +8,7 @@ import { EditSkillsComponent } from './components/hard-soft-skills/edit-skills.c
 import { NewSkillsComponent } from './components/hard-soft-skills/new-skills.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { EditProyectoComponent } from './components/proyecto/edit-proyecto.component';
 import { NewProyectoComponent } from './components/proyecto/new-proyecto.component';
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   {path: 'editedu/:id', component: EditeducacionComponent},
   {path: 'nuevaski', component: NewSkillsComponent},
   {path: 'editski', component: EditSkillsComponent},
-  {path: 'nuevopro', component: NewProyectoComponent}
+  {path: 'nuevopro', component: NewProyectoComponent},
+  {path: 'editpro', component: EditProyectoComponent}
 
 ];
 
