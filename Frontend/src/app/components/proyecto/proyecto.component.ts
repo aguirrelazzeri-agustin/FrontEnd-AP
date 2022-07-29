@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProyectoComponent implements OnInit {
 
+  proyecto: ProyectoComponent[] = [];
+
   constructor() { }
 
   ngOnInit(): void {
