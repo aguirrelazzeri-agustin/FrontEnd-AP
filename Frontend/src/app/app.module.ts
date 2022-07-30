@@ -23,6 +23,7 @@ import { EditeducacionComponent } from './components/educacion/editeducacion.com
 import { NewSkillsComponent } from './components/hard-soft-skills/new-skills.component';
 import { EditSkillsComponent } from './components/hard-soft-skills/edit-skills.component';
 import { NewProyectoComponent } from './components/proyecto/new-proyecto.component';
+import { EditProyectosComponent } from './components/proyecto/edit-proyecto.component';
 
 
 @NgModule({
@@ -40,6 +41,7 @@ import { NewProyectoComponent } from './components/proyecto/new-proyecto.compone
     HomeComponent,
     NewExperienciaComponent,
     EditExperienciaComponent,
+    EditProyectosComponent,
     
     NeweducacionComponent,
           EditeducacionComponent,
