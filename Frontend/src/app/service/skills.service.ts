@@ -7,7 +7,7 @@ import { Skills } from '../model/skills';
   providedIn: 'root'
 })
 export class SkillsService {
-  URLski = 'https://miportafolio-aal.herokuapp.com/';
+  URLski = 'https://miportafolio-aal.herokuapp.com';
 
   constructor(private httpClient: HttpClient) { }
 
