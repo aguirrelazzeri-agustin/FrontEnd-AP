@@ -11,6 +11,7 @@ export class SProyectoService {
   proURL = 'http://localhost:8080/pro/';
 
   constructor(private httpClient: HttpClient) { }
+  
   public lista(): Observable<Proyecto[]> {
     return this.httpClient.get<Proyecto[]>(this.proURL + 'lista');
   }

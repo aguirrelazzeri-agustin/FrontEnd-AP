@@ -1,90 +1,32 @@
-<h2> Educacion</h2>
-<td><button type="button" class="btn btn-secondary"  routerLink="/nuevaedu"  *ngIf="isLogged"> Nueva Educacion</button></td>
-   
-<div class="row" >
-
+<div class="row">
+  <h2>Educación </h2>
+  <div class="col-lg-2">
+    <button type="button" class="btn btn-secondary" routerLink="/nuevaedu" *ngIf="isLogged">
+      Nueva Educacion
+    </button>
+  </div>
   
-    <div class="row row-cols-1 row-cols-md-3 g-4" >
-      <div class="col" *ngFor="let Educacion of educacion">
-        <tr >
+  <div class="col lg 1"></div>
+  <div class="col-lg-11">
+    <table class="table table-striped">
+      <tbody>
+        <tr *ngFor="let Educacion of educacion">
+          <td><h4>{{Educacion.nombreE}}</h4></td>
+          <td>{{Educacion.descripcionE}}</td>
+          <td>{{Educacion.fechaE}}</td>
           <td *ngIf="isLogged">
-              <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
-                  <i class="bi bi-pencil-fill" id="btnsk" ></i></button> 
+            <button class="btn btn-light" routerLink="/editedu/{{Educacion.id}}">
+            <i class="bi bi-pencil"></i></button>
           </td>
+          
           <td *ngIf="isLogged">
-              <button class="btn btn-danger" (click)="delete(Educacion.id)">
-                  <i class="bi bi-trash-fill"></i> BORRAR</button>
+            <button class="btn btn-danger" (click)="delete(Educacion.id)">
+            <i class="bi bi-trash"></i></button>
           </td>
-        </tr>
-        <div class="card h-100">
-          <img src="" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">{{Educacion.nombreE}}</h5>
-            <br/>
-            
-            <p class="card-text1"> {{Educacion.descripcionE}} </p>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted"> <a href={{Educacion.linkE}} target="_blank"> Ubicación </a></small>
-          </div>
-        </div>
-      </div>
-    
-        <div class="col">
-          <div class="card h-100">
-            <img src="../../assets/Escuela nº32.jpg" class="img-fluid" alt="..." >
-            <div class="card-body">
-              <h5 class="card-title">Escuela Primera Nº32 "IYU, que deja huellas"</h5>
-              <br/>
-              
-              <p class="card-text1">Completo:Año:2000-2006</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted"> <a href="https://www.google.com/maps/place/Escuela+Provincial+N%C2%B0+32+-+%22Iy%C3%BA%22/@-53.7633617,-67.7227725,15z/data=!4m2!3m1!1s0x0:0xa7a532461a7f1adb?sa=X&ved=2ahUKEwjyk_na1Lr4AhX6upUCHcBQAN4Q_BJ6BAhQEAU" target="_blank"  > Ubicación </a></small>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="../../assets/Comercio 3.jpg" class="card-img-top" id="Comercio"  >
-            <div class="card-body">
-              <h5 class="card-title">Alicia Moreau De Justo (Ex Comercio Nº3) </h5>
-              <br/>
-              <br/>
-              <br/>
-              <p class="card-text" id="text1">Titulo de Polimodal-Modalidad Humanas y Ciencias Sociales: Completo.
-                Año:2006-2011 
-              </p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted"> <a href="https://www.google.com/maps/place/Alicia+Moreau+de+Justo,+R%C3%ADo+Grande,+Tierra+del+Fuego/@-53.7676819,-67.7206815,16z/data=!4m5!3m4!1s0xbc4b163d0186cbcf:0x85dbaa29e4244fa1!8m2!3d-53.7670742!4d-67.7196761" target="_blank"> Ubicación </a></small>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="../../assets/ISEF 84.jpg" class="card-img-top" id="ISEF">
-            <div class="card-body">
-              <h5 class="card-title">Institutnpmo Superior de Educacion Fisica (ISEF Nº84)</h5>
-              <p class="card-text"> Imcompleto: 2012-2013</p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted"> <a href="https://isfd84-bue.infd.edu.ar/sitio/" target="_blank"> Pagina Oficial </a></small>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-            <div class="card h-100">
-              <img src="../../assets/UNLPam.jpg" class="img-fluid" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Universidad Nacional de La Pampa (UNLPam) - Lic.Comunicación Social </h5>
-                <p class="card-text">Imcompleto: 2014-Actualidad</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted" > <a href="https://www.unlpam.edu.ar/#" target="_blank"> Pagina Oficial </a></small>
-              </div>
-            </div>
-          </div>
-    </div>
-    </div>
-    
+        </tr> 
+      </tbody> 
+    </table>
+  </div>
+
+
+</div>

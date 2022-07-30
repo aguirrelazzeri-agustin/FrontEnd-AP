@@ -11,6 +11,7 @@
 
             <ul class="row justify-content-center list-unstyled mt-3" id="prueba">
                 <li class="col-12 card mb-3" *ngFor="let Experiencia of experiencia">
+                    
                     <tr >
                         <td *ngIf="isLogged">
                             <button class="btn btn-light" routerLink="/editexp/Experiencia.id}}"> 
@@ -26,7 +27,7 @@
                     <div class="row g-0">
                         <div class="col-md-4 d-flex align-items-center">
                             <div class="edu-img"><iframe width="360" height="300"
-                                    src="" title="YouTube video player"
+                                    src="https://www.youtube.com/embed/C1ioGS1P1Qg" title="YouTube video player"
                                     frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe></div>
@@ -45,9 +46,10 @@
                                         <p class="fs-4"><span class="fw-bolder">Año:</span> {{Experiencia.fechaE}} </p>
                                     </div>
                                     <div class="col-md text-center"><a
-                                            href=""
-                                            class="btn btn-lg" target="_blank"></a>
-                                    </div>
+                                        href="https://www.youtube.com/channel/UCajpyH-x1RsEBGN6oqIE59A"
+                                        class="btn btn-lg" target="_blank">Entrevistas Realizadas</a>
+                                </div>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -55,7 +57,19 @@
 
                 </li>
 
-                <li class="col-12 card mb-3">
+                <li class="col-12 card mb-3" *ngFor="let Experiencia of experiencia">
+                    <tr >
+                        <td *ngIf="isLogged">
+                            <button class="btn btn-light" routerLink="/editexp/Experiencia.id}}"> 
+                                <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                        </td>
+                        <td *ngIf="isLogged">
+                            <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                                <i class="bi bi-trash-fill"></i> BORRAR</button>
+                        </td>
+                      
+                        
+                    </tr>
                     <div class="row g-0">
                         <div class="col-md-4 d-flex align-items-center">
                             <div class="edu-img"><iframe width="360" height="300"
