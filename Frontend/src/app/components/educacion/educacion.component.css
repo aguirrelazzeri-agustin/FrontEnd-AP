@@ -16,3 +16,7 @@ h2 {
 .card{
     background-color: rgb(57, 190, 179);
 }
+
+li{
+    list-style-type: none;
+}

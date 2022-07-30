@@ -2,6 +2,7 @@
 
 <div class="row"> 
     <h2 id="titulo">Proyecto</h2> 
+    <td> <button type="button" class="btn btn-dark" routerLink="/nuevopro" *ngIf="isLogged"> Agregar Experiencia</button> </td> 
        
     <div class="card" style="width: 30rem;" id="card" *ngFor="let Proyecto of proyecto">
         <iframe class="Video1"  width="460" height="300" src={{Proyecto.linkp}} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -19,8 +20,8 @@
 
     <div class="row"> 
     
-      <h2 id="titulo">Proyecto</h2> 
-      <td> <button type="button" class="btn btn-dark" routerLink="/nuevopro" *ngIf="isLogged"> Agregar Experiencia</button> </td> 
+
+
          
       <div class="card" style="width: 30rem;" id="card"  *ngFor="let Proyecto of proyecto">
         <tr >
