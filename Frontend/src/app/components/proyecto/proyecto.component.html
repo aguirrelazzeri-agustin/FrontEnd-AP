@@ -14,6 +14,17 @@
             <p> <small class="text-muted">Materia:{{Proyecto.materiaP}}</small> </p>
             <p> <small class="text-muted">Integrante: {{Proyecto.integrantesP}}</small></p>
                      <a href={{Proyecto.linkCP}} class="btn btn-primary" target="_blank">Programa completo</a>
+                     <tr >
+                      <td *ngIf="isLogged">
+                          <button class="btn btn-light" routerLink="/editexp/{{Proyecto.id}}"> 
+                              <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                      </td>
+                      <td *ngIf="isLogged">
+                          <button class="btn btn-danger" (click)="delete(Proyecto.id)">
+                              <i class="bi bi-trash-fill"></i> BORRAR</button>
+                      </td>
+                    
+                      
       </div>
     </div>
     </div>
