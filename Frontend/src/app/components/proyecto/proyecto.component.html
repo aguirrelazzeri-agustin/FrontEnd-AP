@@ -20,31 +20,6 @@
 
     <div class="row"> 
     
-
-
-         
-      <div class="card" style="width: 30rem;" id="card"  *ngFor="let Proyecto of proyecto">
-        <tr >
-          <td *ngIf="isLogged">
-              <button class="btn btn-light" routerLink="/editedu/{{Proyecto.id}}">
-                  <i class="bi bi-pencil-fill" id="btnsk" ></i></button> 
-          </td>
-          <td *ngIf="isLogged">
-              <button class="btn btn-danger" (click)="delete(Proyecto.id)">
-                  <i class="bi bi-trash-fill"></i> BORRAR</button>
-          </td>
-        </tr>
-          <iframe class="Video1"  width="460" height="300" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="card-body">
-          <h5 class="card-title">{{Proyecto.nombreP}</h5>
-           <p class="card-text"> {{Proyecto.descripcionP}
-               </p>
-              <p> <small class="text-muted">Año: {{Proyecto.fechaP}}</small></p>
-              <p> <small class="text-muted">Materia: {{Proyecto.materiaP}}</small> </p>
-              <p> <small class="text-muted">Integrante: {{Proyecto.integrantesP}} </small></p>
-                       <a href="https://www.youtube.com/watch?v=vpvRRstCVDQ&t=2701s" class="btn btn-primary" target="_blank">Programa completo</a>
-        </div>
-      </div>
    
   
     
