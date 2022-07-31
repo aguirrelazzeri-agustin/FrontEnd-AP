@@ -8,7 +8,7 @@ import { persona } from '../model/persona.model';
   providedIn: 'root'
 })
 export class PersonaService {
-  URL = 'https://aalapfront.web.app/';
+  URL = 'https://miportafolio-aal.herokuapp.com/';
 
   constructor(private http: HttpClient) { }
   public getPersona(): Observable<persona>{
