@@ -13,14 +13,14 @@ export class SProyectoService {
   constructor(private httpClient: HttpClient) { }
   
   public lista(): Observable<Proyecto[]> {
-    return this.httpClient.get<Proyecto[]>(this.proURL + 'lista/');
+    return this.httpClient.get<Proyecto[]>(this.proURL + 'lista');
   }
   public detail(id: number): Observable<Proyecto> {
     return this.httpClient.get<Proyecto>(this.proURL + `detail/${id}`);
   }
 
   public save(proyecto: Proyecto): Observable<any> {
-    return this.httpClient.post<any>(this.proURL + 'create/', proyecto);
+    return this.httpClient.post<any>(this.proURL + 'create', proyecto);
   }
 
   public update(id: number, proyecto: Proyecto): Observable<any> {
