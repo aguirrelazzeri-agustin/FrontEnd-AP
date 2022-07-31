@@ -9,7 +9,7 @@ import { NuevoUsuario } from '../model/nuevo-usuario';
   providedIn: 'root'
 })
 export class AuthService {
-  authURL = 'https://miportafolio-aal.herokuapp.com';
+  authURL = 'https://miportafolio-aal.herokuapp.com/';
 
   constructor(private httpClient: HttpClient) { }
 
